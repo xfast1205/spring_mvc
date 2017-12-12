@@ -1,6 +1,12 @@
 package springboot.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class StackoverflowWebsite {
+
+    @Id
     private final String id;
     private final String website;
     private final String iconImageUrl;
@@ -15,23 +21,13 @@ public class StackoverflowWebsite {
         this.description = description;
     }
 
-    public String getId() {
-        return id;
-    }
+    public String getId() { return id; }
 
-    public String getWebsite() {
-        return website;
-    }
+    public String getWebsite() { return website; }
 
-    public String getIconImageUrl() {
-        return iconImageUrl;
-    }
+    public String getIconImageUrl() { return iconImageUrl; }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() { return title; }
 
-    public String getDescription() {
-        return description;
-    }
+    public String getDescription() { return description; }
 }

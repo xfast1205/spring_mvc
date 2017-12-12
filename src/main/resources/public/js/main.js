@@ -1,12 +1,9 @@
 var app = angular.module("springTest", []);
 
-app.controller("AppCtrl", function ($scope) {
-    $scope.websites = [{
-        iconImageUrl:'',
-        id: 'stackoverflow',
-        website: 'stackoverflow.com',
-        title:'stackoverflow website',
-        description:'stackoverflow description'
-    }];
+app.controller("AppCtrl", function ($scope, $http) {
+    $scope.websites = [];
 
+    $http.get('http://localhost:8090/api/overflow').then(function(response) {
+        $scope.websites = response.data;
+    })
 })
