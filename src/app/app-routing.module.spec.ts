@@ -6,7 +6,7 @@ describe('AppRoutingModule', () => {
   beforeEach(() => {
     appRoutingModule = new AppRoutingModule();
   });
-
+//test
   it('should create an instance', () => {
     expect(appRoutingModule).toBeTruthy();
   });
