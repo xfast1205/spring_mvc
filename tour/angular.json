@@ -11,6 +11,7 @@
       "schematics": {},
       "architect": {
         "build": {
+          
           "options": {
             "outputPath": "dist/angular-tour-of-heroes",
             "index": "src/index.html",
