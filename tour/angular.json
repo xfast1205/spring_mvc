@@ -5,6 +5,9 @@
   "projects": {
     "angular-tour-of-heroes": {
       "root": "",
+
+
+
       
       "sourceRoot": "src",
       "projectType": "application",
